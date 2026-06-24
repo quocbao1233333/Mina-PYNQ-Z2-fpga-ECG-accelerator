@@ -1,1 +1,92 @@
+```text
+mina-pynqz2-fpga-ecg-accelerator/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
+├── docs/
+│   ├── paper/
+│   │   └── main.pdf
+│   │
+│   ├── tcl-analysis/
+│   │   └── TCLCONSOLEECG.docx
+│   │
+│   ├── reports/
+│   │   ├── phan_tich_code_jupyter_mina.docx
+│   │   ├── phan_tich_tcl_mina_chuc_nang_chan_khoi.docx
+│   │   └── quy_tac_convolution_ecg_mina.docx
+│   │
+│   └── figures/
+│       └── README.md
+│
+├── software/
+│   └── training/
+│       ├── mina_ecg_train.py
+│       │
+│       ├── dataset/
+│       │   └── README.md
+│       │
+│       ├── data/
+│       │   └── processed/
+│       │       └── .gitkeep
+│       │
+│       ├── models/
+│       │   └── .gitkeep
+│       │
+│       └── results/
+│           └── .gitkeep
+│
+├── hardware/
+│   └── pynqz2/
+│       ├── rtl/
+│       │   ├── mina_top.v
+│       │   ├── mina_controller.v
+│       │   ├── mina_context_rom.v
+│       │   ├── mina_conv1d_layer.v
+│       │   ├── mina_inception_block.v
+│       │   ├── mina_residual_add.v
+│       │   ├── mina_global_pool.v
+│       │   ├── mina_linear_layer.v
+│       │   ├── mina_mac.v
+│       │   ├── mina_relu.v
+│       │   ├── mina_maxpool.v
+│       │   ├── mina_alu.v
+│       │   ├── mina_pe.v
+│       │   ├── mina_pea.v
+│       │   ├── mina_sba.v
+│       │   ├── mina_ldm.v
+│       │   ├── mina_weight_reader.v
+│       │   ├── mina_bias_reader.v
+│       │   └── mina_output_writer.v
+│       │
+│       ├── tcl/
+│       │   └── mina_system_bd.tcl
+│       │
+│       ├── constraints/
+│       │   └── pynqz2.xdc
+│       │
+│       ├── overlays/
+│       │   ├── mina.bit
+│       │   ├── mina.hwh
+│       │   └── README.md
+│       │
+│       └── vivado/
+│           └── README.md
+│
+├── notebooks/
+│   └── pynq/
+│       ├── test_mina_fpga.ipynb
+│       └── README.md
+│
+├── scripts/
+│   ├── export_overlay.tcl
+│   └── README.md
+│
+└── assets/
+    ├── block_diagram/
+    ├── waveform/
+    └── screenshots/
+```
 
